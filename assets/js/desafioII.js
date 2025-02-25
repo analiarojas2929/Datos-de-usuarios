@@ -11,7 +11,7 @@
                 throw new Error('Error al obtener los datos de la API');
             }
             const data = await response.json();
-            return data.results; // Devolver los resultados de la API
+            return data.results; 
         } catch (error) {
             console.error('Error:', error);
             return []; // En caso de error, devolver un array vacío
